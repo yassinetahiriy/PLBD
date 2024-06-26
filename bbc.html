@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Schedule Generator</title>
+</head>
+<body>
+    <h1>Welcome Admin</h1>
+    
+    <h2>Task Shortcuts</h2>
+    <form action="/import" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".xlsx, .xls">
+        <input type="submit" value="Import schedules from Excel file">
+    </form>
+    
+    <form action="/generate" method="post">
+        <input type="submit" value="Generate schedules">
+    </form>
+    
+    <a href="/export_pdf">Export schedules to PDF</a>
+    
+    <h2>Task and Activity Status</h2>
+    <!-- Add status information here -->
+</body>
+</html>
